@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul>
+                    <li><a href="#Categories">Categories</a></li>
+                    <li><a href="#Men">Men</a></li>
+                    <li><a href="#Women">Women</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu">
+                <span class="menu-icon">
+                    <img src="images/icon-menu.svg">
+                </span>
+                <span class="sneakers">
+                    <img src="images/logo.svg" alt="sneakers">
+                </span> 
+            </div>
+            <div class="cart">
+                <img src="images/icon-cart.svg" alt="cart" class="cart-symbol">
+                <img src="images/image-avatar.png" alt="User Icon">
+            </div>
+        </header>
+
+        <section class="product-gallery">
+            <div class="image-container">
+                <img src="images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" >
+            </div>
+            <div class="thumbnail">
+                <img src="images/image-product-1-thumbnail.jpg" alt="image1" height="120px" width="150px">
+                <img src="images/image-product-2-thumbnail.jpg" alt="image2" height="120px" width="100px">
+                <img src="images/image-product-3-thumbnail.jpg" alt="image3" height="120px" width="100px">
+                <img src="images/image-product-4-thumbnail.jpg" alt="image4" height="120px" width="100px">
+            <div class="arrow left">&#10094;</div>
+            <div class="arrow right">&#10095;</div>
+        </section>
+
+        <section class="product-details">
+            <h1>SNEAKER COMPANY</h1>
+            <h2>Fall Limited Edition <br>Sneakers</h2>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+            <div class="price">
+                <span class="current-price">$125.00</span>
+                <span class="discount">50%</span>
+                <span class="original-price">$250.00</span>
+            </div>
+
+            <div class="quantity-container">
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <input type="text" id="quantity" value="0" readonly />
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+              </div>
+              
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
